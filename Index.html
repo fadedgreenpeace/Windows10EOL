@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 End of Life - October 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background for the whole page */
+            color: #F9FAFB;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 4rem 1.5rem;
+            position: relative;
+            text-align: center;
+        }
+        .bg-fixed-img {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg-hero {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://placehold.co/1920x1080/4F46E5/FFFFFF?text=Windows');
+        }
+        .bg-what-is {
+             background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), url('https://placehold.co/1920x1080/10B981/FFFFFF?text=OS');
+        }
+        .bg-eol {
+             background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('https://placehold.co/1920x1080/EF4444/FFFFFF?text=Warning');
+        }
+        .bg-action {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://placehold.co/1920x1080/3B82F6/FFFFFF?text=Action');
+        }
+        .bg-avoid {
+             background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('https://placehold.co/1920x1080/F97316/FFFFFF?text=Stop');
+        }
+
+        .title-text {
+            font-weight: 900;
+            font-size: clamp(2.5rem, 10vw, 6rem);
+            line-height: 1.1;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        .subtitle-text {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 400;
+            max-width: 800px;
+            margin-top: 1rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .content-card {
+            background-color: rgba(31, 41, 55, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 1rem 0;
+        }
+        .stat-bar-container {
+            width: 100%;
+            background-color: #374151;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin: 0.5rem 0;
+            display: flex;
+        }
+        .stat-bar {
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 0.5s ease-in-out;
+        }
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="section bg-fixed-img bg-hero">
+        <h1 class="title-text text-white">Windows 10 Reaches End of Life</h1>
+        <p class="subtitle-text text-gray-300">October 14, 2025</p>
+        <div class="absolute bottom-10 text-white animate-bounce">
+            <i class="fa-solid fa-chevron-down text-3xl"></i>
+        </div>
+    </section>
+
+    <!-- What is an OS? Section -->
+    <section class="section bg-fixed-img bg-what-is">
+        <div class="content-card">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">What is an Operating System?</h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+                An Operating System (OS) is the core software that manages all the hardware and software on your computer. It's the foundation that allows you to run applications like web browsers, office software, and games.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Common Examples:</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li><i class="fa-brands fa-windows mr-2 text-blue-400"></i>Microsoft Windows</li>
+                        <li><i class="fa-brands fa-apple mr-2 text-gray-200"></i>Apple macOS, iOS, iPadOS</li>
+                        <li><i class="fa-brands fa-android mr-2 text-green-400"></i>Google Android</li>
+                        <li><i class="fa-brands fa-linux mr-2 text-yellow-400"></i>Linux</li>
+                        <li><i class="fa-brands fa-chrome mr-2 text-red-400"></i>Google ChromeOS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Desktop Market Share (Global):</h3>
+                     <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-300">Windows (10 & 11)</p>
+                            <div class="stat-bar-container"><div class="stat-bar bg-blue-500" style="width: 71%;">71%</div></div>
+                        </div>
+                        <div>
+                            <p class="text-gray-300">macOS</p>
+                            <div class="stat-bar-container"><div class="stat-bar bg-gray-400" style="width: 16%;">16%</div></div>
+                        </div>
+                         <div>
+                            <p class="text-gray-300">Linux</p>
+                            <div class="stat-bar-container"><div class="stat-bar bg-yellow-500" style="width: 4%;">4%</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <p class="text-sm text-gray-400 mt-8">Market share data via StatCounter (July 2025). Versions are how we track releases, like Windows 10 vs. Windows 11.</p>
+        </div>
+    </section>
+
+    <!-- What is End of Life? Section -->
+    <section class="section bg-fixed-img bg-eol">
+        <div class="content-card">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">What Does "End of Life" Mean?</h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-12">
+                When software reaches "End of Life" (EOL), it doesn't stop working. It just stops being supported. This means it enters a risky and stagnant state.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900/50 p-6 rounded-lg">
+                    <i class="fa-solid fa-shield-halved icon text-red-500"></i>
+                    <h3 class="text-2xl font-bold mb-2">No Security Updates</h3>
+                    <p class="text-gray-300">This is the biggest risk. New vulnerabilities will not be patched, leaving your computer exposed to viruses, ransomware, and hackers.</p>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-lg">
+                    <i class="fa-solid fa-screwdriver-wrench icon text-yellow-500"></i>
+                    <h3 class="text-2xl font-bold mb-2">No Bug Fixes</h3>
+                    <p class="text-gray-300">The system is frozen in time. Annoying glitches or performance issues will never be fixed, and you won't get any new features.</p>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-lg">
+                    <i class="fa-solid fa-puzzle-piece icon text-blue-500"></i>
+                    <h3 class="text-2xl font-bold mb-2">Compatibility Issues</h3>
+                    <p class="text-gray-300">New software (like browsers) and hardware (like printers) will eventually stop working with the old operating system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What Can I Do? Section -->
+    <section class="section bg-fixed-img bg-action">
+        <div class="content-card">
+             <h2 class="text-4xl md:text-5xl font-bold text-white mb-10">What Can You Do?</h2>
+             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-left">
+                <!-- Option 1: Upgrade -->
+                <div class="bg-gray-900/50 p-6 rounded-lg border-2 border-green-500 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-4 text-green-400">1. Upgrade to Windows 11</h3>
+                    <p class="text-gray-300 flex-grow">If your PC is compatible, you can upgrade to Windows 11 for free. This is the most direct path to staying secure.</p>
+                    <a href="https://support.microsoft.com/en-us/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844" target="_blank" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg text-center transition-colors">
+                        Check Compatibility <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <!-- Option 2: New Device -->
+                <div class="bg-gray-900/50 p-6 rounded-lg border-2 border-blue-500 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">2. Purchase a New Device</h3>
+                    <p class="text-gray-300 flex-grow">If your hardware is too old to upgrade, the most secure option is a new PC. Modern devices have significantly better built-in security features like TPM chips and Secure Boot.</p>
+                     <a href="#" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-center transition-colors">
+                        Shop for New PCs
+                    </a>
+                </div>
+                <!-- Option 3: Linux -->
+                <div class="bg-gray-900/50 p-6 rounded-lg border-2 border-yellow-500 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">3. The Fun Answer: Try Linux!</h3>
+                    <p class="text-gray-300 flex-grow">Keep an older device out of a landfill! Linux is a free, secure OS that runs great on older hardware. All major browsers are available, and it's a great way to learn.</p>
+                    <a href="https://ubuntu.com/download/desktop" target="_blank" class="mt-4 inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-lg text-center transition-colors">
+                        Explore Linux <i class="fa-brands fa-linux ml-2"></i>
+                    </a>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- What to Avoid Section -->
+    <section class="section bg-fixed-img bg-avoid">
+        <div class="content-card">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-10">What to Avoid</h2>
+            <div class="space-y-6 max-w-2xl mx-auto text-left">
+                <div class="flex items-start space-x-4 p-4 bg-gray-900/60 rounded-lg">
+                    <i class="fa-solid fa-ban text-3xl text-red-500 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-bold text-red-400">Don't Trust Unsolicited Help</h3>
+                        <p class="text-gray-300">Be wary of pop-ups, emails, or phone calls offering to "help" you upgrade. These are often scams. Only use official tools from Microsoft.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 p-4 bg-gray-900/60 rounded-lg">
+                    <i class="fa-solid fa-ban text-3xl text-red-500 mt-1"></i>
+                    <div>
+                        <h3 class="text-xl font-bold text-red-400">Don't Bypass Compatibility Checks</h3>
+                        <p class="text-gray-300">Forcing Windows 11 onto unsupported hardware can lead to an unstable, buggy experience and Microsoft may block future security updates anyway.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
