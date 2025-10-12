@@ -46,6 +46,10 @@
         .bg-avoid {
              background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('https://placehold.co/1920x1080/F97316/FFFFFF?text=Stop');
         }
+        /* Style for the new media section */
+        .bg-media {
+             background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), url('https://placehold.co/1920x1080/8B5CF6/FFFFFF?text=Media');
+        }
 
         .title-text {
             font-weight: 900;
@@ -90,11 +94,26 @@
             font-size: 3rem;
             margin-bottom: 1rem;
         }
+        /* Responsive container for the YouTube video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
     <section class="section bg-fixed-img bg-hero">
         <h1 class="title-text text-white">Windows 10 Reaches End of Life</h1>
         <p class="subtitle-text text-gray-300">October 14, 2025</p>
@@ -103,7 +122,6 @@
         </div>
     </section>
 
-    <!-- What is an OS? Section -->
     <section class="section bg-fixed-img bg-what-is">
         <div class="content-card">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">What is an Operating System?</h2>
@@ -124,18 +142,18 @@
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-4">Desktop Market Share (Global):</h3>
                      <div class="space-y-4">
-                        <div>
-                            <p class="text-gray-300">Windows (10 & 11)</p>
-                            <div class="stat-bar-container"><div class="stat-bar bg-blue-500" style="width: 71%;">71%</div></div>
-                        </div>
-                        <div>
-                            <p class="text-gray-300">macOS</p>
-                            <div class="stat-bar-container"><div class="stat-bar bg-gray-400" style="width: 16%;">16%</div></div>
-                        </div>
                          <div>
-                            <p class="text-gray-300">Linux</p>
-                            <div class="stat-bar-container"><div class="stat-bar bg-yellow-500" style="width: 4%;">4%</div></div>
-                        </div>
+                             <p class="text-gray-300">Windows (10 & 11)</p>
+                             <div class="stat-bar-container"><div class="stat-bar bg-blue-500" style="width: 71%;">71%</div></div>
+                         </div>
+                         <div>
+                             <p class="text-gray-300">macOS</p>
+                             <div class="stat-bar-container"><div class="stat-bar bg-gray-400" style="width: 16%;">16%</div></div>
+                         </div>
+                          <div>
+                             <p class="text-gray-300">Linux</p>
+                             <div class="stat-bar-container"><div class="stat-bar bg-yellow-500" style="width: 4%;">4%</div></div>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -143,7 +161,6 @@
         </div>
     </section>
 
-    <!-- What is End of Life? Section -->
     <section class="section bg-fixed-img bg-eol">
         <div class="content-card">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">What Does "End of Life" Mean?</h2>
@@ -170,12 +187,10 @@
         </div>
     </section>
     
-    <!-- What Can I Do? Section -->
     <section class="section bg-fixed-img bg-action">
         <div class="content-card">
              <h2 class="text-4xl md:text-5xl font-bold text-white mb-10">What Can You Do?</h2>
              <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-left">
-                <!-- Option 1: Upgrade -->
                 <div class="bg-gray-900/50 p-6 rounded-lg border-2 border-green-500 flex flex-col">
                     <h3 class="text-2xl font-bold mb-4 text-green-400">1. Upgrade to Windows 11</h3>
                     <p class="text-gray-300 flex-grow">If your PC is compatible, you can upgrade to Windows 11 for free. This is the most direct path to staying secure.</p>
@@ -183,7 +198,6 @@
                         Check Compatibility <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                <!-- Option 2: New Device -->
                 <div class="bg-gray-900/50 p-6 rounded-lg border-2 border-blue-500 flex flex-col">
                     <h3 class="text-2xl font-bold mb-4 text-blue-400">2. Purchase a New Device</h3>
                     <p class="text-gray-300 flex-grow">If your hardware is too old to upgrade, the most secure option is a new PC. Modern devices have significantly better built-in security features like TPM chips and Secure Boot.</p>
@@ -191,7 +205,6 @@
                         Shop for New PCs
                     </a>
                 </div>
-                <!-- Option 3: Linux -->
                 <div class="bg-gray-900/50 p-6 rounded-lg border-2 border-yellow-500 flex flex-col">
                     <h3 class="text-2xl font-bold mb-4 text-yellow-400">3. The Fun Answer: Try Linux!</h3>
                     <p class="text-gray-300 flex-grow">Keep an older device out of a landfill! Linux is a free, secure OS that runs great on older hardware. All major browsers are available, and it's a great way to learn.</p>
@@ -203,7 +216,6 @@
         </div>
     </section>
 
-    <!-- What to Avoid Section -->
     <section class="section bg-fixed-img bg-avoid">
         <div class="content-card">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-10">What to Avoid</h2>
@@ -226,5 +238,51 @@
         </div>
     </section>
 
-</body>
+    <section id="resources" class="section bg-fixed-img bg-media">
+        <div class="content-card">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-10">Additional Resources</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
+                
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-200 flex items-center">
+                            <i class="fa-solid fa-file-powerpoint text-orange-400 mr-3"></i>Presentation Slides
+                        </h3>
+                        <p class="text-gray-300 mb-4">Click the button below to view the detailed presentation on this topic.</p>
+                        <a href="https://docs.google.com/presentation/d/1JJrYrRtpDsjy6Wl1bVs0HF2RTssqgcbqViGCT0A4EGI/edit?usp=sharing" target="_blank" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-lg text-center transition-colors">
+                            View Slides <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-200 flex items-center">
+                            <i class="fa-solid fa-file-audio text-purple-400 mr-3"></i>Audio Summary
+                        </h3>
+                        <p class="text-gray-300 mb-4">Listen to a brief audio overview of the key takeaways.</p>
+                        <audio controls class="w-full">
+                            <source src="/Win10EOL.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-200 flex items-center">
+                        <i class="fa-brands fa-youtube text-red-500 mr-3"></i>Video Explainer
+                    </h3>
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/6TXeZ5qLRoQ?si=Q-zWt3EBYUSnLWSU" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
 </html>
+```
